@@ -1,5 +1,7 @@
+#[allow(lint(self_transfer))]
 module knowscroll_platform::channel_nft {
-    use std::string::{Self, String};
+    use std::string::String;
+    use std::ascii;
     use sui::url::{Self, Url};
     use sui::vec_map::{Self, VecMap};
     use sui::event;
@@ -73,14 +75,16 @@ module knowscroll_platform::channel_nft {
         description: String,
         category: String,
         initial_shares: u64,
-        image_url: Option<String>,
+        image_url: Option<vector<u8>>, // Changed to bytes instead of String
         ctx: &mut TxContext
     ): Channel {
         let channel_id = object::new(ctx);
         let channel_object_id = object::uid_to_inner(&channel_id);
 
         let image_url_option = if (option::is_some(&image_url)) {
-            option::some(url::new_unsafe(*option::borrow(&image_url)))
+            let url_bytes = *option::borrow(&image_url);
+            let url_string = ascii::string(url_bytes);
+            option::some(url::new_unsafe(url_string))
         } else {
             option::none()
         };
@@ -181,5 +185,9 @@ module knowscroll_platform::channel_nft {
 
     public fun get_shares_info(shares: &ChannelShare): (ID, u64) {
         (shares.channel_id, shares.amount)
+    }
+
+    public fun get_total_shares(channel: &Channel): u64 {
+        channel.total_shares
     }
 }
