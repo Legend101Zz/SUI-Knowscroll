@@ -381,7 +381,7 @@ export default function CreatePage() {
                 </h3>
                 <p className="text-white/70 text-sm">
                   Connect your SUI wallet to create and publish content on the
-                  blockchain. Your content will be stored securely and you'll
+                  blockchain. Your content will be stored securely and you&apos;ll
                   own it forever.
                 </p>
               </div>
@@ -403,8 +403,7 @@ export default function CreatePage() {
             ].map((step, index) => (
               <div key={step} className="flex flex-col items-center relative">
                 <motion.div
-                  className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 ${
-                    [
+                  className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 ${[
                       "uploading",
                       "processing",
                       "metadata",
@@ -414,16 +413,16 @@ export default function CreatePage() {
                     ].indexOf(uploadStep) >= index
                       ? "bg-primary"
                       : "bg-white/10"
-                  }`}
+                    }`}
                   animate={{
                     scale: uploadStep === step ? [1, 1.2, 1] : 1,
                     boxShadow:
                       uploadStep === step
                         ? [
-                            "0 0 0 rgba(143, 70, 193, 0.4)",
-                            "0 0 20px rgba(143, 70, 193, 0.6)",
-                            "0 0 0 rgba(143, 70, 193, 0.4)",
-                          ]
+                          "0 0 0 rgba(143, 70, 193, 0.4)",
+                          "0 0 20px rgba(143, 70, 193, 0.6)",
+                          "0 0 0 rgba(143, 70, 193, 0.4)",
+                        ]
                         : "none",
                   }}
                   transition={{
@@ -462,8 +461,7 @@ export default function CreatePage() {
 
                 {index < 6 && (
                   <div
-                    className={`absolute top-4 left-full w-5 md:w-10 h-0.5 -ml-1 md:-ml-3 ${
-                      [
+                    className={`absolute top-4 left-full w-5 md:w-10 h-0.5 -ml-1 md:-ml-3 ${[
                         "uploading",
                         "processing",
                         "metadata",
@@ -473,7 +471,7 @@ export default function CreatePage() {
                       ].indexOf(uploadStep) > index
                         ? "bg-primary"
                         : "bg-white/10"
-                    }`}
+                      }`}
                     style={{ transform: "translateX(50%)" }}
                   />
                 )}
@@ -494,13 +492,12 @@ export default function CreatePage() {
             >
               <div
                 ref={uploadAreaRef}
-                className={`border-2 border-dashed rounded-3xl p-8 md:p-12 mb-8 text-center transition-colors ${
-                  !currentAccount
+                className={`border-2 border-dashed rounded-3xl p-8 md:p-12 mb-8 text-center transition-colors ${!currentAccount
                     ? "border-white/10 bg-white/5 cursor-not-allowed opacity-50"
                     : isDragging
                       ? "border-primary bg-primary/10"
                       : "border-white/20 hover:border-primary/50 hover:bg-white/5"
-                }`}
+                  }`}
                 onDragEnter={handleDragEnter}
                 onDragLeave={handleDragLeave}
                 onDragOver={handleDragOver}
@@ -557,18 +554,17 @@ export default function CreatePage() {
                   </p>
 
                   <motion.button
-                    className={`px-6 py-3 ${
-                      currentAccount
+                    className={`px-6 py-3 ${currentAccount
                         ? "bg-gradient-to-r from-primary to-primary-secondary hover:from-primary-600 hover:to-primary-secondary-600"
                         : "bg-white/10 cursor-not-allowed"
-                    } rounded-full font-medium`}
+                      } rounded-full font-medium`}
                     whileHover={
                       currentAccount
                         ? {
-                            scale: 1.05,
-                            boxShadow:
-                              "0 10px 25px -5px rgba(143, 70, 193, 0.4)",
-                          }
+                          scale: 1.05,
+                          boxShadow:
+                            "0 10px 25px -5px rgba(143, 70, 193, 0.4)",
+                        }
                         : {}
                     }
                     whileTap={currentAccount ? { scale: 0.95 } : {}}
