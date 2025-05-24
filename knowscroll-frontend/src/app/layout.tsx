@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { SuiProvider } from '@/context/SuiContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-background text-foreground`}>
         <main className="min-h-screen">
-          {children}
+          <SuiProvider>
+            {children}
+          </SuiProvider>
         </main>
       </body>
     </html>
