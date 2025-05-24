@@ -1,31 +1,31 @@
 import { Thread } from "@/types";
-import { mockReels } from "./reels";
 
-export const mockThreads: Thread[] = [
+export const threads: Thread[] = [
   {
-    id: "1",
-    title: "Physics Fundamentals",
-    description: "Master the basics of physics through engaging content",
-    episodes: [mockReels[0]],
-    totalEpisodes: 12,
-    category: "Science",
-    thumbnail: "/images/quantum-physics-thumb.jpg",
-    creator: {
-      name: "Dr. Physics",
-      avatar: "/images/avatar-alex.jpg",
-    },
-  },
-  {
-    id: "2",
-    title: "World History Series",
-    description: "Explore civilizations throughout human history",
-    episodes: [mockReels[1]],
-    totalEpisodes: 15,
-    category: "History",
-    thumbnail: "/images/ancient-rome-thumb.jpg",
-    creator: {
-      name: "History Prof",
-      avatar: "/images/avatar-taylor.jpg",
-    },
+    id: "thread1",
+    title: "Black Holes",
+    createdAt: "2025-04-10T14:35:00Z",
+    creatorId: "user1",
+    participantIds: ["user1", "user2", "user3"],
+    seriesId: "series1",
+    reelIds: ["reel1", "reel2", "reel3"],
+    messages: [
+      {
+        id: "msg1",
+        userId: "user1",
+        content: "That part about event horizons was mind-blowing!",
+        timestamp: "2025-04-10T14:35:00Z",
+        reelId: "reel2",
+        timeInReel: "01:45",
+      },
+      {
+        id: "msg2",
+        userId: "user3",
+        content: "Check this part!",
+        timestamp: "2025-04-10T15:10:00Z",
+        reelId: "reel1",
+        timeInReel: "00:52",
+      },
+    ],
   },
 ];

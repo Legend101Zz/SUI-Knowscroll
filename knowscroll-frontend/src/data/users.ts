@@ -1,20 +1,32 @@
-export const mockUsers = [
+import { User } from "@/types";
+
+export const users: User[] = [
   {
-    id: "1",
-    name: "Dr. Physics",
+    id: "user1",
+    name: "Alex Johnson",
+    username: "alex_science",
     avatar: "/images/avatar-alex.jpg",
-    specialization: "Quantum Physics",
+    isOnline: true,
   },
   {
-    id: "2",
-    name: "History Prof",
-    avatar: "/images/avatar-taylor.jpg",
-    specialization: "Ancient History",
-  },
-  {
-    id: "3",
-    name: "Tech Guru",
+    id: "user2",
+    name: "Jamie Smith",
+    username: "jamie_history",
     avatar: "/images/avatar-jamie.jpg",
-    specialization: "AI & Technology",
+    lastActive: "2h ago",
+  },
+  {
+    id: "user3",
+    name: "Taylor Wong",
+    username: "taylor_physics",
+    avatar: "/images/avatar-taylor.jpg",
+    lastActive: "5m ago",
+  },
+  {
+    id: "user4",
+    name: "Jordan Lee",
+    username: "jordan_math",
+    avatar: "/images/avatar-alex.jpg",
+    lastActive: "1d ago",
   },
 ];

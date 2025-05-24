@@ -1,25 +1,26 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { SuiProvider } from "@/context/SuiContext";
+import './globals.css'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "KnowScroll - Sui Edition",
-  description: "AI-Generated Educational Content on Sui Blockchain",
-};
+  title: 'KnowScroll - Guilt-Free Educational Reels',
+  description: 'Learn while you scroll with KnowScroll',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <SuiProvider>{children}</SuiProvider>
+      <body className={`${inter.className} bg-background text-foreground`}>
+        <main className="min-h-screen">
+          {children}
+        </main>
       </body>
     </html>
-  );
+  )
 }
