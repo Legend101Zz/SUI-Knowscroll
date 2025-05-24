@@ -1,0 +1,8 @@
+{
+  "title": "Consensus Mechanisms",
+  "script": "Different consensus mechanisms like Proof-of-Work (PoW), Proof-of-Stake (PoS), and Zero-Knowledge-Rolling Hash ensure blockchain systems reach agreement efficiently. PoW uses energy, PoS relies on stake, and ZK-Rolling Hash is faster and reduces trust issues.",
+  "visuals_description": "Visual representations of these consensus mechanisms with each system highlighted in bold to emphasize their unique approaches.",
+  "duration": 13.2,
+  "generated_at": "2025-03-10T16:45:35.082596",
+  "video_path": "demo/videos/consensus_mechanisms_df05e3.mp4"
+}

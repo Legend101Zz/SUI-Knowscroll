@@ -1,0 +1,8 @@
+{
+  "title": "What is Blockchain?",
+  "script": "Blockchain is a distributed digital ledger that records transactions across multiple computers. Each block contains a timestamp and transaction data, and is linked to the previous block through cryptographic hashes.",
+  "visuals_description": "Animation showing linked blocks forming a chain.",
+  "duration": 12.0,
+  "generated_at": "2025-03-10T18:06:29.391997",
+  "video_path": "demo/videos/what_is_blockchain?_df86e1.mp4"
+}

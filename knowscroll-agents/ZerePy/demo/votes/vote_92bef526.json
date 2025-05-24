@@ -1,0 +1,64 @@
+{
+  "vote_id": "vote_92bef526",
+  "draft_id": "draft_4a1bc902",
+  "proposal_id": 42,
+  "channel_id": 15,
+  "title": "Blockchain Fundamentals",
+  "started_at": "2025-03-10T18:06:36.480652",
+  "ends_at": "2025-03-12T18:06:36.480622",
+  "status": "APPROVED",
+  "votes": [
+    {
+      "voter": "0x2230fa13d7e44a1db8f3cb64f6015345",
+      "weight": 9,
+      "direction": "FOR",
+      "voted_at": "2025-03-10T18:06:37.989521"
+    },
+    {
+      "voter": "0xab0b6b2d68534acabb15e8613a92fe36",
+      "weight": 23,
+      "direction": "FOR",
+      "voted_at": "2025-03-10T18:06:39.494765"
+    },
+    {
+      "voter": "0xec35f8cbb66142699827a4a4405ab62d",
+      "weight": 8,
+      "direction": "FOR",
+      "voted_at": "2025-03-10T18:06:41.000021"
+    },
+    {
+      "voter": "0xa66b7ec9ef414b7f88ad477d258e0285",
+      "weight": 8,
+      "direction": "FOR",
+      "voted_at": "2025-03-10T18:06:42.505140"
+    },
+    {
+      "voter": "0xe8ba1de7e3b740cc86eeab0e85267eab",
+      "weight": 16,
+      "direction": "FOR",
+      "voted_at": "2025-03-10T18:06:44.010239"
+    },
+    {
+      "voter": "0xf2a2b9e8dff8438fb3e7833a87e5db56",
+      "weight": 13,
+      "direction": "FOR",
+      "voted_at": "2025-03-10T18:06:45.515330"
+    },
+    {
+      "voter": "0xb4878f23299e4881b4020b7c796dde87",
+      "weight": 13,
+      "direction": "AGAINST",
+      "voted_at": "2025-03-10T18:06:47.020410"
+    },
+    {
+      "voter": "0x049aa6fec3564517904de15e58d2311b",
+      "weight": 17,
+      "direction": "AGAINST",
+      "voted_at": "2025-03-10T18:06:48.521927"
+    }
+  ],
+  "for_votes": 77,
+  "against_votes": 30,
+  "total_votes": 107,
+  "quorum_reached": true
+}

@@ -1,0 +1,8 @@
+{
+  "title": "How Does Consensus Work?",
+  "script": "Consensus mechanisms ensure all participants agree on the ledger state. Popular methods include Proof of Work and Proof of Stake, where validators lock up tokens as collateral.",
+  "visuals_description": "Comparison diagram of different consensus methods.",
+  "duration": 10.799999999999999,
+  "generated_at": "2025-03-10T18:06:32.395317",
+  "video_path": "demo/videos/how_does_consensus_work?_5b461d.mp4"
+}

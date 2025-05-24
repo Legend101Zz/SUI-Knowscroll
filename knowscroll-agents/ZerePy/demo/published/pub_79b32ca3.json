@@ -1,0 +1,46 @@
+{
+  "published_id": "pub_79b32ca3",
+  "draft_id": "draft_4a1bc902",
+  "vote_id": "vote_92bef526",
+  "proposal_id": 42,
+  "channel_id": 15,
+  "title": "Blockchain Fundamentals",
+  "segments": [
+    {
+      "segment_title": "What is Blockchain?",
+      "script": "Blockchain is a distributed digital ledger that records transactions across multiple computers. Each block contains a timestamp and transaction data, and is linked to the previous block through cryptographic hashes.",
+      "visuals": "Animation showing linked blocks forming a chain."
+    },
+    {
+      "segment_title": "How Does Consensus Work?",
+      "script": "Consensus mechanisms ensure all participants agree on the ledger state. Popular methods include Proof of Work and Proof of Stake, where validators lock up tokens as collateral.",
+      "visuals": "Comparison diagram of different consensus methods."
+    },
+    {
+      "segment_title": "Smart Contracts Explained",
+      "script": "Smart contracts are self-executing programs that run on blockchain networks. They automatically enforce agreements between parties without needing intermediaries.",
+      "visuals": "Flowchart showing contract execution steps."
+    }
+  ],
+  "video_paths": [
+    {
+      "segment_index": 0,
+      "title": "What is Blockchain?",
+      "video_path": "demo/videos/what_is_blockchain?_df86e1.mp4",
+      "metadata_path": "demo/videos/what_is_blockchain?_df86e1.json"
+    },
+    {
+      "segment_index": 1,
+      "title": "How Does Consensus Work?",
+      "video_path": "demo/videos/how_does_consensus_work?_5b461d.mp4",
+      "metadata_path": "demo/videos/how_does_consensus_work?_5b461d.json"
+    },
+    {
+      "segment_index": 2,
+      "title": "Smart Contracts Explained",
+      "video_path": "demo/videos/smart_contracts_explained_047386.mp4",
+      "metadata_path": "demo/videos/smart_contracts_explained_047386.json"
+    }
+  ],
+  "published_at": "2025-03-10T18:06:51.532334"
+}
