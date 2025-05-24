@@ -792,7 +792,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### Development Team
 
-- **GitHub**: [Your GitHub Profile](https://github.com/Legend101Zz)
+- **GitHub**: [Follow us](https://github.com/Legend101Zz)
 - **Email**: mrigeshthakur11@gmail.com
 
 ### Community Channels
